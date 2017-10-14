@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ruboty-tweet"
   spec.version       = Ruboty::Tweet::VERSION
   spec.authors       = ["Takuma Homma"]
-  spec.email         = ["nagomimatcha@gmail.com"]
+  spec.email         = ["sfprhythnn@gmail.com"]
 
   spec.summary       = "Post tweet"
   spec.description   = "Post tweet"
