@@ -1,9 +1,5 @@
 # Ruboty::Tweet
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruboty/tweet`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -32,8 +28,17 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruboty-tweet.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mataku/ruboty-tweet.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Env
+
+```
+TWITTER_CONSUMER_KEY           - Twitter consumer key
+TWITTER_CONSUMER_SECRET        - Twitter consumer secret
+TWITTER_ACCESS_TOKEN           - Twitter access token
+TWITTER_ACCESS_TOKEN_SECRET    - Twitter access token secret
+```
