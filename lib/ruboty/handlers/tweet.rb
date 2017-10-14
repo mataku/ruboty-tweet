@@ -6,10 +6,10 @@ module Ruboty
         name: 'tweet',
         description: 'ツイートします'
       )
-    end
 
-    def tweet(message)
-      Ruboty::Tweet::Actions::Post.new(message).call
+      def tweet(message)
+        Ruboty::Tweet::Actions::Post.new(message).call
+      end
     end
   end
 end
