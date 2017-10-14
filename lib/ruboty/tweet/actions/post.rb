@@ -5,10 +5,10 @@ module Ruboty
     module Actions
       class Post < Ruboty::Actions::Base
         def call
-          client.update(message)
+          client.update(message[:body])
           message.reply(success_message)
         rescue => e
-          message.reply(failure_message + '\n' + e.message)
+          reply_error(e)
         end
       
         private
@@ -20,6 +20,11 @@ module Ruboty
             c.access_token = ENV['TWITTER_ACCESS_TOKEN']
             c.access_token_secret = ENV['TWITTER_ACCESS_TOKEN_SECRET']
           end
+        end
+
+        def reply_error(e)
+          message.reply(failure_message)
+          message.reply("```#{e.message}```")
         end
 
         def success_message

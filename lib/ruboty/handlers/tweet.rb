@@ -2,7 +2,7 @@ module Ruboty
   module Handlers
     class Tweet < Base
       on(
-        /tweet/,
+        /tweet (?<body>.+)/,
         name: 'tweet',
         description: 'ツイートします'
       )
