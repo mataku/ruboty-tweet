@@ -5,7 +5,9 @@ module Ruboty
     module Actions
       class Post < Ruboty::Actions::Base
         def call
-          client.update(message[:body])
+          message.reply(message.from)
+          message.reply(message.from_name)
+          # client.update(message[:body])
           message.reply(success_message)
         rescue => e
           reply_error(e)
