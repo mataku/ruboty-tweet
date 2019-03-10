@@ -6,7 +6,6 @@ module Ruboty
       class Post < Ruboty::Actions::Base
         def call
           client.update(message[:body])
-          message.reply(success_message)
         rescue => e
           reply_error(e)
         end
