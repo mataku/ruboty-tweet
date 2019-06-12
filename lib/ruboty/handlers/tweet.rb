@@ -10,7 +10,9 @@ module Ruboty
       on(
         /randomデ$/,
         name: 'random',
-        description: 'ランダムなツイートをします'
+        description: 'ランダムなツイートをします',
+        all: true,
+        missing: true
       )
 
       def tweet(message)
