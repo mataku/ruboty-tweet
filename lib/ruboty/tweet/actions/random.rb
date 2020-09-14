@@ -6,6 +6,7 @@ module Ruboty
       class Random < Ruboty::Actions::Base
         def call
           client.update(body)
+          message.reply(success_message)
         rescue => e
           reply_error(e)
         end
