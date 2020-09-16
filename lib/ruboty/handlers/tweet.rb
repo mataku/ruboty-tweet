@@ -8,7 +8,7 @@ module Ruboty
       )
 
       on(
-        /randomデ$/,
+        /random$/,
         name: 'random',
         description: 'ランダムなツイートをします',
         all: true,
