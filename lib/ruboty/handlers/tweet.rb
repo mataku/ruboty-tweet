@@ -8,11 +8,9 @@ module Ruboty
       )
 
       on(
-        /random$/,
+        /random/,
         name: 'random',
-        description: 'ランダムなツイートをします',
-        all: true,
-        missing: true
+        description: 'ランダムなツイートをします'
       )
 
       def tweet(message)
