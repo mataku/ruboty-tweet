@@ -14,7 +14,7 @@ module Ruboty
       )
 
       on(
-        /heimin/,
+        /heimin (?<body>.+)/,
         name: 'heimin',
         description: '平民のツイートをします'
       )
