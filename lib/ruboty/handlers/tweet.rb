@@ -20,7 +20,7 @@ module Ruboty
       )
 
       on(
-        /show_list/,
+        /show_tweet_list/,
         name: 'show_list',
         description: 'ツイート一覧を表示します'
       )
