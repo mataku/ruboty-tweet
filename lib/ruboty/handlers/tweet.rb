@@ -19,6 +19,12 @@ module Ruboty
         description: '平民のツイートをします'
       )
 
+      on(
+        /show_list/,
+        name: 'show_list',
+        description: 'ツイート一覧を表示します'
+      )
+
       def tweet(message)
         Ruboty::Tweet::Actions::Post.new(message).call
       end
@@ -29,6 +35,10 @@ module Ruboty
 
       def heimin(message)
         Ruboty::Tweet::Actions::Heimin.new(message).call
+      end
+
+      def show_list(message)
+        Ruboty::Tweet::Actions::List.new(message).call
       end
     end
   end
